@@ -6,9 +6,9 @@ import java.util.UUID;
 public record CourseRegistrationId(UUID value){
 
     public CourseRegistrationId{
-        Objects.requireNonNull(value, 'ID cannot be null!')
+        Objects.requireNonNull(value, "ID cannot be null");
     }
     public static CourseRegistrationId generate(){
-        return new CourseRegistrationId(UUID.randomUUID())
+        return new CourseRegistrationId(UUID.randomUUID());
     }
 }
